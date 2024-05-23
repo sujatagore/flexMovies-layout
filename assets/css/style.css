@@ -137,6 +137,69 @@ body{
 
 /*------------------------------------------------------------ Watch Now CSS end-------------------------------------------------------*/
 
+
+/*------------------------------------------------------------ Download Now CSS ----------------------------------------------------*/
+
+.download-img{
+    height: 250px;
+}
+
+.download-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download-link{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.download-content{
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.download-info{
+    background-color: var(--color-white);
+    padding: 20px;
+}
+
+.download-gener{
+    margin-bottom: 10px;
+}
+
+.download-gener h4,.download-cast h4{
+    flex: 0 0 50px;
+    align-self: center;
+}
+
+
+.download-cast img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.download-rating{
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    font-weight: 700;
+}
+
+
+
+/*----------------------------------------- CSS tab -----------------------------------------*/
+
 @media all and (min-width:768px) {
     .postsection{
         flex-direction: row;
@@ -169,6 +232,23 @@ body{
     .watch-content{
         padding: 30px;
         align-self: center;
+    }
+
+    .download-img{
+        height: auto;
+        background-color: var(--color-dark);
+    }
+
+    .download-content{
+        flex-direction: row;
+    }
+    
+    .download-info{
+        flex-grow: 1;
+    }
+
+    .download-link, .download-rating{
+        flex: 0 0 200px;
     }
 }
 
